@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prosto+One&family=Zen+Dots&display=swap");
+
+/* font-family: "Montserrat", serif; */
+/* font-family: "Zen Dots", sans-serif; */
+/* font-family: "Prosto One", sans-serif; */
+
+@media screen and (max-width: 767px) {
+  .launch-container{
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .launch-container_m{
+    display: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+html,
+body {
+  background-color: #111;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Title */
+.body {
+  /* height: 100vh; */
+  height: 200vh;
+  overflow: hidden;
+  z-index: 99;
+  background-color: #111;
+  position: relative;
+}
+.body h1 {
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* white-space: nowrap; */
+  font-family: "Zen Dots", sans-serif;
+  font-size: 15vh;
+  transition: font-size 0.3s ease;
+  z-index: 1000;
+}
+
+/* Product Image with benefits */
+.img-product {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 0px 200px;
+  z-index: 99;
+  position: relative;
+  background-color: #111;
+}
+.product-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10vh;
+}
+.product-benefits-left {
+  width: 25%;
+  text-align: right;
+  list-style-type: none;
+}
+.product-benefits-right {
+  width: 25%;
+  list-style-type: none;
+}
+.img-product img {
+  height: 200px;
+  width: 200px;
+}
+.benefits-product li {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 20px;
+  font-family: "Prosto One", sans-serif;
+  margin-bottom: 10px;
+}
+
+/* Ingredient carousel */
+.ingredient-carousel {
+  height: 50vh;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scrollbar-color: gray transparent;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+.ingredient-carousel::-webkit-scrollbar {
+  /* display: none; */
+  height: 2px;
+}
+.ingrdient-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", serif;
+}
+.ingrdient-card img {
+  width: 310px;
+  animation: moveUpDown 2s ease-in-out infinite;
+  display: block;
+  margin: 0 auto;
+}
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.ingredient-name {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+.ingredient-info {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: rgb(195, 195, 195);
+}
+
+/*  Product Results */
+.product-results {
+  margin-top: 10px;
+}
+.product-results img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Shop-now-link */
+.shop-now-link {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffefa;
+  position: fixed;
+  top: 90%;
+  width: 100%;
+  z-index: 10;
+}
+.shop-now-link a {
+  padding: 15px 40px;
+  background-color: #183457;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Prosto One", sans-serif;
+  font-family: "Zen Dots", sans-serif;
+  font-family: "Montserrat", serif;
+}
+
+/* MOBILE */
+
+/* Title */
+.body_m {
+  /* height: 100vh; */
+  height: 200vh;
+  overflow: hidden;
+  /* border: 1px solid rgb(255, 0, 0); */
+  z-index: 99;
+  background-color: #111;
+  position: relative;
+  /* padding-bottom: 100px; */
+}
+.body_m h1 {
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* white-space: nowrap; */
+  font-family: "Zen Dots", sans-serif;
+  font-size: 5vh;
+  transition: font-size 0.3s ease;
+  z-index: 1000;
+  /* border: 1px solid crimson; */
+}
+
+/* Product Image with benefits */
+.img-product_m {
+  display: flex;
+  /* justify-content:end; */
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  /* padding: 0px 200px; */
+  /* border: 1px solid coral; */
+  z-index: 99;
+  position: relative;
+  background-color: #111;
+}
+.product-image_m {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10vh;
+}
+.product-benefits-left_m {
+  /* border: 1px solid green; */
+  /* width: 25%; */
+  /* text-align: right; */
+  list-style-type: none;
+}
+.product-benefits-right_m {
+  border: 1px solid rgb(138, 206, 138);
+  /* width: 25%; */
+  list-style-type: none;
+}
+.img-product_m img {
+  height: 50px;
+  width: 50px;
+}
+.benefits-product_m li {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 20px;
+  font-family: "Prosto One", sans-serif;
+  margin-bottom: 10px;
+}
+
+/* Ingredient carousel */
+.ingredient-carousel_m {
+  height: 50vh;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  /* justify-content: center;*/
+  /* border: 1px solid red; */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scrollbar-color: gray transparent;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+.ingredient-carousel_m::-webkit-scrollbar {
+  /* display: none; */
+  height: 2px;
+}
+.ingrdient-card_m {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", serif;
+  /* border: 1px solid red; */
+}
+.ingrdient-card_m img {
+  width: 310px;
+  animation: moveUpDown 2s ease-in-out infinite;
+  display: block;
+  margin: 0 auto;
+}
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.ingredient-name_m {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+.ingredient-info_m {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: rgb(195, 195, 195);
+}
+
+/*  Product Results */
+.product-results_m {
+  /* border: 1px solid rgb(21, 255, 0); */
+  margin-top: 10px;
+}
+.product-results_m img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Shop-now-link */
+.shop-now-link_m {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffefa;
+  position: fixed;
+  top: 90%;
+  width: 100%;
+  z-index: 10;
+}
+.shop-now-link_m a {
+  padding: 10px 40px;
+  background-color: #183457;
+  outline: none;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Prosto One", sans-serif;
+  font-family: "Zen Dots", sans-serif;
+  font-family: "Montserrat", serif;
+}
+
+/* Lat Sample */
+
+.lst-sample_m {
+  height: 10vh;
+}
